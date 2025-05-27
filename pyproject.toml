@@ -28,9 +28,5 @@ torchvision = "*"
 cmake = ">=3.0.0,<4"
 eigen = ">=3.4.0,<4"
 
-[tool.pixi.pypi-options]
-no-build-isolation = ["curope"]
-
 [tool.pixi.pypi-dependencies]
-curope = { path = "./dust3r/croco/models/curope" }
 mast3r = { path = ".", editable = true }

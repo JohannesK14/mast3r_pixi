@@ -1036,7 +1036,7 @@ packages:
 - pypi: ./dust3r/croco/models/curope
   name: curope
   version: 0.0.0
-  sha256: 23f28d66beb56a61a55033345b64bc609d5aa14605665bb65af73f93f66176f3
+  sha256: 66113a0c29e2faac238a04957d073704b88d04402e35f77f4a0eac35b0aa5576
 - pypi: https://files.pythonhosted.org/packages/e7/05/c19819d5e3d95294a6f5947fb9b9629efb316b96de511b418c53d245aae6/cycler-0.12.1-py3-none-any.whl
   name: cycler
   version: 0.12.1
@@ -2664,7 +2664,7 @@ packages:
 - pypi: ./
   name: mast3r
   version: 0.0.1
-  sha256: 926aeb323ddb2d015c800c9146c3aa6ced1931e2ec2ef61f0551e3b07af19889
+  sha256: e1c56ae3418c60b930dee1900a1cb41a66a825feac84894a261e4df5a6fbbcb9
   requires_dist:
   - scikit-learn
   - roma
@@ -2678,6 +2678,7 @@ packages:
   - tensorboard
   - pyglet
   - huggingface-hub[torch]>=0.22
+  - curope @ file:///media/jwkuenzel/work/projects/mast3r_pixi/dust3r/croco/models/curope
   - asmk @ file:///media/jwkuenzel/work/projects/mast3r_pixi/asmk
   requires_python: '>=3.10'
   editable: true
