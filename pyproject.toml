@@ -11,7 +11,7 @@ build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["mast3r", "dust3r"]
+include = ["mast3r", "mast3r.*", "dust3r.dust3r", "dust3r.dust3r.*", "dust3r.croco.*"]
 namespaces = false
 
 [tool.pixi.project]
