@@ -1,0 +1,36 @@
+[project]
+version = "0.0.1"
+authors = [{name = "Johannes Künzel", email = "johannes.kuenzel@hhi.fraunhofer.de"}]
+name = "mast3r"
+requires-python = ">= 3.10"
+dynamic = ["dependencies"]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["mast3r", "dust3r"]
+namespaces = false
+
+[tool.pixi.project]
+channels = ["nvidia/label/cuda-12.6.0", "https://prefix.dev/conda-forge"]
+platforms = ["linux-64"]
+
+[tool.pixi.system-requirements]
+cuda = "12.6"
+
+[tool.pixi.dependencies]
+cuda = {version = "*", channel="nvidia/label/cuda-12.6.0"}
+pytorch-gpu = "*"
+torchvision = "*"
+cmake = ">=3.0.0,<4"
+eigen = ">=3.4.0,<4"
+
+[tool.pixi.pypi-options]
+no-build-isolation = ["curope"]
+
+[tool.pixi.pypi-dependencies]
+curope = { path = "./dust3r/croco/models/curope" }
+mast3r = { path = ".", editable = true }
