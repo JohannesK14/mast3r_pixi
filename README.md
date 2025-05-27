@@ -1,3 +1,7 @@
+# Adaption of the official Mast3r code for the usage with pixi
+
+[[Pixi GitHub](https://github.com/prefix-dev/pixi/)]
+
 ![banner](assets/mast3r.jpg)
 
 Official implementation of `Grounding Image Matching in 3D with MASt3R`  
