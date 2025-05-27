@@ -1,3 +1,4 @@
 - dust3r and croco added to code base
 - asmk added
 - setup.py, pyproject.toml and dust3r/croco/models/curope/pyproject.toml added
+- asmk/pyproject.toml added
