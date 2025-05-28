@@ -2,20 +2,20 @@
 # Licensed under CC BY-NC-SA 4.0 (non-commercial use only).
 #
 # --------------------------------------------------------
-# dust3r submodule import
+# CroCo submodule import
 # --------------------------------------------------------
 
-raise RuntimeError("Deprecated")
+raise RuntimeError("path_to_croco.py is deprecated")
 
 import sys
 import os.path as path
 HERE_PATH = path.normpath(path.dirname(__file__))
-DUSt3R_REPO_PATH = path.normpath(path.join(HERE_PATH, '../../dust3r'))
-DUSt3R_LIB_PATH = path.join(DUSt3R_REPO_PATH, 'dust3r')
+CROCO_REPO_PATH = path.normpath(path.join(HERE_PATH, '../../croco'))
+CROCO_MODELS_PATH = path.join(CROCO_REPO_PATH, 'models')
 # check the presence of models directory in repo to be sure its cloned
-if path.isdir(DUSt3R_LIB_PATH):
+if path.isdir(CROCO_MODELS_PATH):
     # workaround for sibling import
-    sys.path.insert(0, DUSt3R_REPO_PATH)
+    sys.path.insert(0, CROCO_REPO_PATH)
 else:
-    raise ImportError(f"dust3r is not initialized, could not find: {DUSt3R_LIB_PATH}.\n "
+    raise ImportError(f"croco is not initialized, could not find: {CROCO_MODELS_PATH}.\n "
                       "Did you forget to run 'git submodule update --init --recursive' ?")

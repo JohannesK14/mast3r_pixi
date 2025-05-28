@@ -4,3 +4,6 @@
 - asmk/pyproject.toml added
 - changes asmk from MASt3R-SLAM integrated
 - pixi.lock added
+- moved croco and dust3r into mast3r folder
+- docker related stuff removed
+- assets, demos, ... from dust3r and croco removed
