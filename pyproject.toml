@@ -24,6 +24,7 @@ cuda = "12.6"
 [tool.pixi.dependencies]
 cmake = ">=3.0.0,<4"
 eigen = ">=3.4.0,<4"
+cuda-toolkit = "*"
 
 [tool.pixi.pypi-dependencies]
 mast3r = { path = ".", editable = true }
